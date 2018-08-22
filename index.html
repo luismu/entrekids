@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>entrekids</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-datepaginator.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+  <!--navbar ============================================================-->
+  <nav class="navbar navbar-defult">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">entrekids</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Buscar actividades">
+            <input type="text" class="form-control" placeholder="Ubicación">
+          </div>
+          <button type="submit" class="btn btn-default">S</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">999 pts</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">(6)</span> María José<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!--container-->
+  </nav>
+  <!-- /navbar-->
+
+  <!-- alert info ======================================================== -->
+  <div class="alert-info text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+
+  <!-- core ======================================================== -->
+  <div class="container section-activities">
+    <div class="row">
+      <!-- button filter only mobile -->
+      <div class="filter container text-center">
+        <button data-toggle="modal" data-target="#modal-filters" class="btn btn-default btn-filter">FILTROS</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal-filters" role="dialog">
+          <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Filtros</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active" ><a href="#calendariom" data-toggle="tab">Calendario</a></li>
+                    <li><a href="#listam" data-toggle="tab">  Lista  </a></li>
+                    <li><a href="#mapam" data-toggle="tab" >Mapa   </a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="calendariom">
+                      <div class="container-fluid">
+                          <hr />  
+                        <p data-toggle="collapse" data-target="#ubicacionm">UBICACIÓN<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+                        <div id="ubicacionm" class="collapse">
+                            FILTRO UBICACION,
+                        </div>
+                        
+                        <p data-toggle="collapse" data-target="#edadm">EDAD<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+                        <div id="edadm" class="collapse">
+                            FILTRO EDAD,
+                        </div>
+                        
+                        <p data-toggle="collapse" data-target="#preciom">PRECIO<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+                        <div id="preciom" class="collapse">
+                            FILTRO PRECIO,
+                        </div>
+                        
+                        <p data-toggle="collapse" data-target="#proveedoresm">PROVEEDORES<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+                        <div id="proveedoresm" class="collapse">
+                            FILTRO PROVEEDORES,
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="listam">
+                      <h3>contenido lista</h3>
+                    </div>
+                    <div class="tab-pane fade" id="mapam">
+                      <h3>contenido mapa</h3>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- filters tab section desktop and tablet-->
+      <div class="col-md-3 filter-section">
+        <ul class="nav nav-tabs">
+          <li class="active" ><a href="#calendario" data-toggle="tab">Calendario</a></li>
+          <li><a href="#lista" data-toggle="tab">  Lista  </a></li>
+          <li><a href="#mapa" data-toggle="tab" >Mapa   </a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="calendario">
+            <div class="container-fluid">
+                <hr />
+              <p data-toggle="collapse" data-target="#ubicacion">UBICACIÓN<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+              <div id="ubicacion" class="collapse">
+                  FILTRO UBICACION,
+              </div>
+              <hr />
+              <p data-toggle="collapse" data-target="#edad">EDAD<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+              <div id="edad" class="collapse">
+                  FILTRO EDAD,
+              </div>
+              <hr />
+              <p data-toggle="collapse" data-target="#precio">PRECIO<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+              <div id="precio" class="collapse">
+                  FILTRO PRECIO,
+              </div>
+              <hr />
+              <p data-toggle="collapse" data-target="#proveedores">PROVEEDORES<i class="glyphicon glyphicon-chevron-down pull-right"></i></p>
+              <div id="proveedores" class="collapse">
+                  FILTRO PROVEEDORES,
+              </div>
+              <hr />
+            </div>
+          </div>
+          <div class="tab-pane fade" id="lista">
+            <h3>contenido lista</h3>
+          </div>
+          <div class="tab-pane fade" id="mapa">
+            <h3>contenido mapa</h3>
+          </div>
+        </div>
+      </div> <!-- /filters tab section desktop and tablets-->
+      <!-- activities section -->
+      <div class="col-md-9 activities-section">
+        <div class="row"> <!-- calendar-->
+          <div id="date-paginator" class="col-xs-12"></div>
+        </div>
+        <!--activity container row-->
+        <div class="row container-fluid">
+          <!-- row activity -->
+          <div class="row activity">   
+            <div class="col-sm-2 col-md-2 col-xs-12 imagen">
+                <img src="https://picjumbo.com/wp-content/uploads/ferris-wheel-place-for-text_free_stock_photos_picjumbo_DSC07746-2210x1473.jpg" class="img-responsive">
+            </div>
+
+            <div class="descripcion col-sm-10 col-md-10 col-xs-12">
+              <div class="row">
+                <div class="col-sm-5 col-xs-10">
+                  <h5>Curabitur Cobortis convallis</h5>
+                  <p>Suspendise fermetum sem sagitis ante veni</p>
+                  <p class="no-mobile">Edad: 8 - 12 años</p>
+                  <p class="no-mobile">Providencia</p>
+                </div>
+                <div class="col-sm-1 col-xs-2">icon</div>
+                <div class="col-sm-4 col-xs-12">
+                  <h5>10:00 AM</h5>
+                  <p class="no-mobile">99 min</p>
+                  <p>Precio entrekids: $99999</p>
+                  <s>Precio normal: $99999</s>
+                </div>
+                <div class="col-sm-2">
+                  <div class="row text-center">
+                    <button class="btn btn-info btn-see">VER</button>
+                  </div>
+                  <div class="no-mobile text-center row">
+                    <p>9 cupos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reservaciones-cerradas row"></div>
+            </div>
+          </div><!-- /row activity-->
+
+          <!-- row activity -->
+          <div class="row activity">   
+              <div class="col-sm-2 col-md-2 col-xs-12 imagen">
+                  <img src="https://picjumbo.com/wp-content/uploads/ferris-wheel-place-for-text_free_stock_photos_picjumbo_DSC07746-2210x1473.jpg" class="img-responsive">
+              </div>
+  
+              <div class="descripcion col-sm-10 col-md-10 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-5 col-xs-10">
+                    <h5>Curabitur Cobortis convallis</h5>
+                    <p>Suspendise fermetum sem sagitis ante veni</p>
+                    <p class="no-mobile">Edad: 8 - 12 años</p>
+                    <p class="no-mobile">Providencia</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-2">icon</div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h5>10:00 AM</h5>
+                    <p class="no-mobile">99 min</p>
+                    <p>Precio entrekids: $99999</p>
+                    <s>Precio normal: $99999</s>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="row text-center">
+                      <button class="btn btn-info btn-see">VER</button>
+                    </div>
+                    <div class="no-mobile text-center row">
+                      <p>9 cupos</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservaciones-cerradas row"></div>
+              </div>
+            </div><!-- /row activity-->
+
+            <!-- row activity -->
+          <div class="row activity">   
+              <div class="col-sm-2 col-md-2 col-xs-12 imagen">
+                  <img src="https://picjumbo.com/wp-content/uploads/ferris-wheel-place-for-text_free_stock_photos_picjumbo_DSC07746-2210x1473.jpg" class="img-responsive">
+              </div>
+  
+              <div class="descripcion col-sm-10 col-md-10 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-5 col-xs-10">
+                    <h5>Curabitur Cobortis convallis</h5>
+                    <p>Suspendise fermetum sem sagitis ante veni</p>
+                    <p class="no-mobile">Edad: 8 - 12 años</p>
+                    <p class="no-mobile">Providencia</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-2">icon</div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h5>10:00 AM</h5>
+                    <p class="no-mobile">99 min</p>
+                    <p>Precio entrekids: $99999</p>
+                    <s>Precio normal: $99999</s>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="row text-center">
+                      <button class="btn btn-info btn-see">VER</button>
+                    </div>
+                    <div class="no-mobile text-center row">
+                      <p>9 cupos</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservaciones-cerradas row"></div>
+              </div>
+            </div><!-- /row activity-->
+
+            <!-- row activity -->
+          <div class="row activity">   
+              <div class="col-sm-2 col-md-2 col-xs-12 imagen">
+                  <img src="https://picjumbo.com/wp-content/uploads/ferris-wheel-place-for-text_free_stock_photos_picjumbo_DSC07746-2210x1473.jpg" class="img-responsive">
+              </div>
+  
+              <div class="descripcion col-sm-10 col-md-10 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-5 col-xs-10">
+                    <h5>Curabitur Cobortis convallis</h5>
+                    <p>Suspendise fermetum sem sagitis ante veni</p>
+                    <p class="no-mobile">Edad: 8 - 12 años</p>
+                    <p class="no-mobile">Providencia</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-2">icon</div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h5>10:00 AM</h5>
+                    <p class="no-mobile">99 min</p>
+                    <p>Precio entrekids: $99999</p>
+                    <s>Precio normal: $99999</s>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="row text-center">
+                      <button class="btn btn-info btn-see">VER</button>
+                    </div>
+                    <div class="no-mobile text-center row">
+                      <p>9 cupos</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservaciones-cerradas row"></div>
+              </div>
+            </div><!-- /row activity-->
+
+            <!-- row activity -->
+          <div class="row activity">   
+              <div class="col-sm-2 col-md-2 col-xs-12 imagen">
+                  <img src="https://picjumbo.com/wp-content/uploads/ferris-wheel-place-for-text_free_stock_photos_picjumbo_DSC07746-2210x1473.jpg" class="img-responsive">
+              </div>
+  
+              <div class="descripcion col-sm-10 col-md-10 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-5 col-xs-10">
+                    <h5>Curabitur Cobortis convallis</h5>
+                    <p>Suspendise fermetum sem sagitis ante veni</p>
+                    <p class="no-mobile">Edad: 8 - 12 años</p>
+                    <p class="no-mobile">Providencia</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-2">icon</div>
+                  <div class="col-sm-4 col-xs-12">
+                    <h5>10:00 AM</h5>
+                    <p class="no-mobile">99 min</p>
+                    <p>Precio entrekids: $99999</p>
+                    <s>Precio normal: $99999</s>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="row text-center">
+                      <button class="btn btn-info btn-see">VER</button>
+                    </div>
+                    <div class="no-mobile text-center row">
+                      <p>9 cupos</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservaciones-cerradas row"></div>
+              </div>
+            </div><!-- /row activity-->
+          
+          <div class="row col-xs-12">
+            <div class="container-fluid text-center div-register-invitation">
+              <h4>Para ver todas las actividades que entrekids tiene para ti</h4>
+              <button class="btn btn-danger">REGISTRATE</button>
+            </div>
+          </div><!-- /registrate row-->
+        </div><!-- /activity container row-->
+      </div><!-- /activities section-->
+    </div><!--row-->
+  </div>
+  <!-- /core =================================================-->
+
+  <!-- Footer ================================================-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>EntreKids</h4>
+          <a href="#">Sobre Nosotros</a>
+          <a href="#">Nuestro Equipo</a>
+          <a href="#">Mapa del Sitio</a>
+          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Privacidad</a>
+        </div>
+        <div class="col-md-3">
+          <h4>Para Negocios</h4>
+          <a href="#">Ser Proveedor</a>
+          <a href="#">Ayuda Proveedores</a>
+        </div>
+        <div class="col-md-3">
+          <h4>Contacto</h4>
+          <a href="">contacto@entrekids.cl</a>
+          <a href="">Formulario de Contacto</a>
+        </div>
+        <div class="col-md-3">
+          <h4>Siguenos</h4>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="row">
+          <hr />
+      </div>
+      <div class="row text-center">
+        <h4>2018 ENTREKIDS ® TODOS LOS DERECHOS RESERVADOS</h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.js"></script>
+  <script src="js/bootstrap-datepaginator.js"></script>
+
+  <!-- Initialization with options -->
+<script type='text/javascript'>
+  var options = {
+    selectedDate: moment().format(''),
+    //selectedDateFormat: 'YYYY-MM-DD',
+    itemWidth: 70
+  }
+  $('#date-paginator').datepaginator(options);
+</script>
+</body>
+</html>

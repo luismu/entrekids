@@ -1,0 +1,59 @@
+.section-activities{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.div-register-invitation{
+  border-style: dotted;
+  border-width: 2px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.footer {
+ background-color: #5a5a5a;
+ color: white;
+}
+
+.footer a{
+  color: white;
+}
+
+/* ============= MEDIA QUERIES =============*/
+
+/* devices mobile */
+@media (max-width: 768px) { 
+  .filter-section{
+    display: none;
+  }
+  .no-mobile{
+    display: none;
+  }
+  .section-activities{
+    padding-top: 20px;
+  }
+
+  .filter{
+    padding-bottom: 20px;
+  }
+  
+  .filter .btn-filter{
+    width: 80%  !important;
+  }
+  .btn-see{
+    width: 80%;
+  }
+  .activity{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* devices from tablets to desktop*/
+@media (min-width: 768px){
+  .filter{
+    display: none;
+  }
+
+  
+}
